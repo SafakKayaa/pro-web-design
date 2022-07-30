@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Web Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="bg-gray-700 border-orange-700 border-b-4 p-8 m-auto md:flex md:justify-evenly">
+            <div class="flex justify-center pb-2">
+                <h1><span class="text-orange-700 text-3xl font-bold">Acme</span>
+                    <span class="text-white font-bold text-3xl"> Web Design</span>
+                </h1>
+            </div>
+            <div class="flex justify-center">
+                <ul class="text-white flex text-xl">
+                    <a href="">
+                        <li class="text-orange-700 mx-2 ">Home</li>
+                    </a>
+                    <a href="">
+                        <li class=" mx-2 ">About</li>
+                    </a>
+                    <a href="">
+                        <li class=" mx-2 ">Services</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <article>
+            <div class=" p-14 w-full"
+                style=" background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/stefan.jpg')">
+                <div>
+                    <h1 class="text-white text-3xl font-bold text-center md:text-5xl">Affordable Professional Web Design
+                    </h1>
+                </div>
+                <div class="text-white text-center pt-6 pb-24">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laborum ea non cum ex odit
+                        veniam,
+                        aspernatur voluptatibus laboriosam delectus dolorum nulla placeat optio blanditiis fugiat soluta
+                        impedit rerum animi!
+
+                    </p>
+                </div>
+            </div>
+
+        </article>
+        <form >
+            <div class="bg-gray-700  py-10 px-14 m-auto md:flex items-center">
+                <p class="text-white font-bold mb-5 flex justify-center text-xl">Subscribe To Our Newsletter</p>
+                <div class="m-auto md:flex">
+                    <div>
+                        <input class="p-1 mb-2 w-full" type="text" placeholder="Enter your Email">
+
+                    </div>
+
+                    <div class="bg-orange-700 p-2 flex justify-center">
+                        <button class="text-white  ">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
